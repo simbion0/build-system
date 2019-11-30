@@ -16,7 +16,7 @@
   "files":
   [
     {
-      "includePattern": "./(.[^/]*(\\.deb)$)",
+      "includePattern": "build/bin/(.*\\.deb)\"",
       "uploadPattern": "$1",
       "matrixParams":
       {
