@@ -17,6 +17,7 @@ script:
   - cmake --build . --target package
 before_deploy:
   - sed -i "s/__VERSION__/$TRAVIS_BUILD_NUMBER/g" bintray_settings.json
+  - cat bintray_settings.json
 deploy:
   skip_cleanup: true
   provider: bintray
