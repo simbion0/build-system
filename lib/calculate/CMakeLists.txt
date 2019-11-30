@@ -1,0 +1,1 @@
+add_library(calculate_lib ${PROJECT_SOURCE_DIR}/lib/calculate/lib.cpp)
