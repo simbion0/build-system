@@ -9,7 +9,7 @@ project(simple_math VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 include(${CMAKE_SOURCE_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
 
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/library)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -29,4 +29,4 @@ set(CPACK_PACKAGE_CONTACT simbion0@gmail.com)
 set(CPACK_DEBIAN_PACKAGE_SHLIBDEPS ON)
 include(CPack)
 
-install(TARGETS calculate_app RUNTIME DESTINATION bin)
+

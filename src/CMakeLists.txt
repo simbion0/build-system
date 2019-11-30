@@ -4,3 +4,5 @@ target_link_libraries(calculate_app
         calculate_lib
         current_ver
         )
+
+install(TARGETS calculate_app RUNTIME DESTINATION bin)
