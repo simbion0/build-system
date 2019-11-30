@@ -16,7 +16,7 @@
   "files":
   [
     {
-      "includePattern": "/home/travis/build/simbion0/build-system/(.*\\.deb)",
+      "includePattern": "./(.[^/]*(\\.deb)$)",
       "uploadPattern": "$1",
       "matrixParams":
       {
